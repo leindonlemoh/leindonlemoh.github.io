@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+.banner {
+  background: #0038a8;
+  color: #fcd116;
+  height: 100px;
+  text-align: left;
+}
+#query {
+  background: #cce3de;
+}
+.mySlides {
+  display: none;
+}
+#more {
+  display: none;
+}
