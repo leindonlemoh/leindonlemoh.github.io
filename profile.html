@@ -26,6 +26,7 @@
         <h2>Philippines Plebiscite</h2>
       </div>
     </div>
+    <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="home.html">Navbar</a>
@@ -43,15 +44,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html"
-                >Home</a
-              >
+              <a class="nav-link" aria-current="page" href="home.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="profile.html">Profile</a>
+              <a class="nav-link active" href="profile.html">Profile</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -77,7 +76,9 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#"
+                  <a
+                    class="dropdown-item"
+                    href="mailto:leindonreimohdilan@yahoo.com"
                     ><i class="bi bi-envelope"> &nbsp; Email</i></a
                   >
                 </li>
@@ -87,7 +88,6 @@
         </div>
       </div>
     </nav>
-
     <!-- query -->
     <div class="container-xxl">
       <div id="query" class="carousel carousel-dark slide" data-bs-ride="true">
@@ -347,9 +347,224 @@
         <!-- end of carousel div -->
       </div>
     </div>
+    <!-- END OF QUERY -->
+    <!-- start of info -->
 
-    <!-- left post -->
-    <div class="left-post"></div>
+    <div id="info" class="container mt-5 d-grid">
+      <div class="input-group col-6">
+        <span class="input-group-text col-1">First name</span>
+        <input
+          type="text"
+          aria-label="First name"
+          class="form-control col-8"
+          value="Juan"
+          disabled
+        />
+        <span class="input-group-text col-1">Last name</span>
+        <input
+          type="text"
+          aria-label="Last name"
+          value="Marcos"
+          class="form-control col-8"
+          disabled
+        />
+      </div>
+      <div class="input-group">
+        <span class="input-group-text">Email:</span>
+        <input
+          type="email"
+          aria-label="email"
+          value="juanmarcos@aol.com"
+          class="form-control col-8"
+          disabled
+        />
+        <span class="input-group-text">Contact Number:</span>
+        <input
+          type="tel"
+          aria-label="tel"
+          value="+69876559054"
+          class="form-control col-8"
+          disabled
+        />
+      </div>
+    </div>
+
+    <!-- end of info -->
+
+    <!-- create post -->
+    <div class="container mt-4 ms-5">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        data-bs-whatever="@mdo"
+      >
+        Create Post
+      </button>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">New Post</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Post:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+                <div class="mb-3 p-5">
+                  <label for="recipient-name" class="col-form-label"
+                    >Choices:</label
+                  >
+                  <br />
+                  <button type="button" class="btn first col-6">Happy</button>
+                  <button type="button" class="btn sec col-6">Angry</button>
+                  <button type="button" class="btn third col-6">Nuetral</button>
+                  <button type="button" class="btn fourth col-6">
+                    Undecided
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn btn-primary">Post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of create post -->
+
+    <!-- post -->
+    <div class="post">
+      <div id="soc" class="container mt-2 d-grid gap-3">
+        <div id="post" class="row text-align-center">
+          <div class="left col-9">
+            <h4>Post1</h4>
+            <p>post1</p>
+          </div>
+          <div class="right col-3">
+            <div id="react" class="row col-12">
+              <div class="first col-6 text-align-center">
+                Happy <br />
+                50%
+              </div>
+              <div class="sec col-6 text-align-center">Angry <br />0</div>
+              <div class="third col-6 text-align-center">
+                Nuetral <br />
+                25%
+              </div>
+              <div class="fourth col-6 text-align-center">
+                No React <br />
+                25%
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="post" class="row text-align-center">
+          <div class="left col-9">
+            <h4>Post1</h4>
+            <p>post1</p>
+          </div>
+          <div class="right col-3">
+            <div id="react" class="row col-12 d-flex">
+              <div class="first col-6 text-align-center">
+                Happy <br />
+                50%
+              </div>
+              <div class="sec col-6 text-align-center">Angry <br />0</div>
+              <div class="third col-6 text-align-center">
+                Nuetral <br />
+                25%
+              </div>
+              <div class="fourth col-6 text-align-center">
+                No React <br />
+                25%
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="post" class="row text-align-center">
+          <div class="left col-9">
+            <h4>Post1</h4>
+            <p>post1</p>
+          </div>
+          <div class="right col-3">
+            <div id="react" class="row col-12 d-flex">
+              <div class="first col-6">Happy</div>
+              <div class="sec col-6">Angry</div>
+              <div class="third col-6">Nuetral</div>
+              <div class="fourth col-6">No React</div>
+            </div>
+          </div>
+        </div>
+        <div id="post" class="row text-align-center">
+          <div class="left col-9">
+            <h4>Post1</h4>
+            <p>post1</p>
+          </div>
+          <div class="right col-3">
+            <div id="react" class="row col-12 d-flex">
+              <div class="first col-6">Happy</div>
+              <div class="sec col-6">Angry</div>
+              <div class="third col-6">Nuetral</div>
+              <div class="fourth col-6">No React</div>
+            </div>
+          </div>
+        </div>
+        <div id="post" class="row text-align-center">
+          <div class="left col-9">
+            <h4>Post1</h4>
+            <p>post1</p>
+          </div>
+          <div class="right col-3">
+            <div id="react" class="row col-12 d-flex">
+              <div class="first col-6">Happy</div>
+              <div class="sec col-6">Angry</div>
+              <div class="third col-6">Nuetral</div>
+              <div class="fourth col-6">No React</div>
+            </div>
+          </div>
+        </div>
+        <div id="post" class="row text-align-center">
+          <div class="left col-9">
+            <h4>Post1</h4>
+            <p>post1</p>
+          </div>
+          <div class="right col-3">
+            <div id="react" class="row col-12 d-flex">
+              <div class="first col-6">Happy</div>
+              <div class="sec col-6">Angry</div>
+              <div class="third col-6">Nuetral</div>
+              <div class="fourth col-6">No React</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of post -->
     <!-- JavaScript Bundle with Popper -->
 
     <script>

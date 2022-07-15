@@ -3,55 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=0, initial-scale=1.0" />
-    <title>Philippines-Plebescite</title>
-    <!-- CSS only -->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./admin-login.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles.css" />
-    <!-- icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css"
-    />
   </head>
   <body>
+    <!-- banner -->
     <div id="banner" class="container-fluid">
       <div class="row p-4">
         <h2>Philippines Plebiscite</h2>
       </div>
     </div>
+    <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="home.html">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html"
+              <a class="nav-link active" aria-current="page" href="ad-home.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="profile.html">Profile</a>
+              <a class="nav-link" href="records.html">Records</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -87,8 +67,6 @@
         </div>
       </div>
     </nav>
-
-    <!-- query -->
     <div class="container-xxl">
       <div id="query" class="carousel carousel-dark slide" data-bs-ride="true">
         <div id="carousel-indicators" class="carousel-indicators">
@@ -348,51 +326,160 @@
       </div>
     </div>
 
-    <!-- left post -->
-    <div class="left-post"></div>
-    <!-- JavaScript Bundle with Popper -->
+    <!-- create query -->
+    <div class="container mt-4 ms-5">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        data-bs-whatever="@mdo"
+      >
+        Create New Query
+      </button>
 
-    <script>
-      function myFunction() {
-        var dots = document.getElementById("dots");
-        var moreText = document.getElementById("more");
-        var btnText = document.getElementById("myBtn");
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">New Post</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Title:</label
+                  >
+                  <input type="text" class="form-control" id="recipient-name" />
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label"
+                    >Content:</label
+                  >
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+                <div class="mb-3 p-5">
+                  <label for="recipient-name" class="col-form-label"
+                    >Choices:</label
+                  >
+                  <br />
+                  <button type="button" class="btn agree col-6 bg-success">
+                    Agree
+                  </button>
+                  <button type="button" class="btn disagree col-6 bg-danger">
+                    Disagree
+                  </button>
+                  <button
+                    type="button"
+                    class="btn undecided col-6 bg-secondary"
+                  >
+                    Undecided
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn btn-primary">Post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end query -->
 
-        if (dots.style.display === "none") {
-          dots.style.display = "inline";
-          btnText.innerHTML = "Read more";
-          moreText.style.display = "none";
-        } else {
-          dots.style.display = "none";
-          btnText.innerHTML = "Read less";
-          moreText.style.display = "inline";
-        }
-      }
-    </script>
+    <!-- post -->
+    <div class="left-side">
+      <div id="post" class="post-lr">
+        <div class="post">
+          <h4>Post1</h4>
+          <p>post1</p>
+        </div>
+        <div class="react">
+          <div id="react">
+            <div class="first">
+              Happy <br />
+              50%
+            </div>
+            <div class="sec">Angry <br />0</div>
+            <div class="third">
+              Nuetral <br />
+              25%
+            </div>
+            <div class="fourth">
+              No React <br />
+              25%
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="post" class="post-lr">
+        <div class="post">
+          <h4>Post1</h4>
+          <p>post1</p>
+        </div>
+        <div class="react">
+          <div id="react">
+            <div class="first">
+              Happy <br />
+              50%
+            </div>
+            <div class="sec">Angry <br />0</div>
+            <div class="third">
+              Nuetral <br />
+              25%
+            </div>
+            <div class="fourth">
+              No React <br />
+              25%
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="post" class="post-lr">
+        <div class="post">
+          <h4>Post1</h4>
+          <p>post1</p>
+        </div>
+        <div class="react">
+          <div id="react">
+            <div class="first">
+              Happy <br />
+              50%
+            </div>
+            <div class="sec">Angry <br />0</div>
+            <div class="third">
+              Nuetral <br />
+              25%
+            </div>
+            <div class="fourth">
+              No React <br />
+              25%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end post -->
 
-    <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
-
-      function plusDivs(n) {
-        showDivs((slideIndex += n));
-      }
-
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = x.length;
-        }
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        x[slideIndex - 1].style.display = "block";
-      }
-    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
