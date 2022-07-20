@@ -29,6 +29,18 @@
     <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
+        <a class="navbar-brand" href="ad-home.html">Vote</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -310,24 +322,30 @@
 
     <div id="info" class="container mt-5 text-center">
       <div class="row col-fluid-12">
-        <div class="col-2 bg-light rounded-pill border border-dark">
+        <div class="col-lg-2 bg-light rounded-pill border border-dark">
           First Name:
         </div>
-        <div class="col-4 bg-light border border-dark rounded-pill">Admin</div>
-        <div class="col-2 bg-light rounded-pill border border-dark">
+        <div class="col-lg-4 bg-light border border-dark rounded-pill">
+          admin
+        </div>
+        <div class="col-lg-2 bg-light rounded-pill border border-dark">
           Last Name:
         </div>
-        <div class="col-4 bg-light border border-dark rounded-pill">admin</div>
+        <div class="col-lg-4 bg-light border border-dark rounded-pill">
+          admin
+        </div>
       </div>
       <div class="row col-fluid-12">
-        <div class="col-2 bg-light rounded-pill border border-dark">Email:</div>
-        <div class="col-4 bg-light border border-dark rounded-pill">
-          plebesciteadmin@aol.com
+        <div class="col-lg-2 bg-light rounded-pill border border-dark">
+          Email:
         </div>
-        <div class="col-2 bg-light rounded-pill border border-dark">
+        <div class="col-lg-4 bg-light border border-dark rounded-pill">
+          adminph_plebescite@gmail.com
+        </div>
+        <div class="col-lg-2 bg-light rounded-pill border border-dark">
           Contact Number:
         </div>
-        <div class="col-4 bg-light border border-dark rounded-pill">
+        <div class="col-lg-4 bg-light border border-dark rounded-pill">
           +639586332145
         </div>
       </div>
@@ -336,7 +354,7 @@
     <!-- end of info -->
 
     <!-- create post -->
-    <div class="container mt-4 ms-5">
+    <div class="container mt-4">
       <button
         type="button"
         class="btn btn-primary"
@@ -385,13 +403,13 @@
                   >
                   <br />
                   <!-- choices -->
-                  <div id="react" class="container d-flex gap-3">
-                    <div class="row col-fluid-12">
+                  <div id="react" class="container gap-3">
+                    <div class="row row-cols-4">
                       <!-- happy -->
                       <div class="col">
                         <a href="#"
                           ><img
-                            class="img"
+                            class="img img-fluid"
                             src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/beaming-face-with-smiling-eyes_1f601.png"
                             title="React Happy"
                         /></a>
@@ -401,7 +419,7 @@
                         <!-- angry -->
                         <a href="#"
                           ><img
-                            class="img"
+                            class="img img-fluid"
                             src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/pouting-face_1f621.png"
                             title="React Angry"
                         /></a>
@@ -411,7 +429,7 @@
                         <!-- sad -->
                         <a href="#"
                           ><img
-                            class="img"
+                            class="img img-fluid"
                             src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/crying-face_1f622.png"
                             title="React Sad"
                         /></a>
@@ -421,7 +439,7 @@
                         <!-- dont care -->
                         <a href="#"
                           ><img
-                            class="img"
+                            class="img img-fluid"
                             src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/unamused-face_1f612.png"
                             title="React Don't care"
                         /></a>
@@ -430,7 +448,7 @@
                       <div class="col">
                         <a href="#"
                           ><img
-                            class="img"
+                            class="img img-fluid"
                             src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/fearful-face_1f628.png"
                             title="React Afraid"
                         /></a>
@@ -439,7 +457,7 @@
                       <div class="col">
                         <a href="#"
                           ><img
-                            class="img"
+                            class="img img-fluid"
                             src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/smiling-face-with-halo_1f607.png"
                             title="blessed"
                         /></a>
@@ -530,16 +548,17 @@
                 </div>
                 <!-- end of modal -->
                 <h4>How do you feel about this post?</h4>
-                <div id="react" class="container d-flex gap-3">
-                  <div class="row col-fluid-12">
+                <div id="react" class="container gap-3">
+                  <div class="row row-cols-4">
                     <!-- happy -->
                     <div class="col">
                       <a href="#"
                         ><img
-                          class="img"
+                          class="img-fluid"
                           src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/beaming-face-with-smiling-eyes_1f601.png"
                           title="React Happy"
-                        />Happy 90%</a
+                        />
+                        <p>90%</p></a
                       >
                     </div>
 
@@ -547,10 +566,11 @@
                       <!-- angry -->
                       <a href="#"
                         ><img
-                          class="img"
+                          class="img-fluid"
                           src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/pouting-face_1f621.png"
                           title="React Angry"
-                        />Angry</a
+                        />
+                        <p>0</p></a
                       >
                     </div>
 
@@ -558,10 +578,11 @@
                       <!-- sad -->
                       <a href="#"
                         ><img
-                          class="img"
+                          class="img-fluid"
                           src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/crying-face_1f622.png"
                           title="React Sad"
-                        />Sad 5%</a
+                        />
+                        <p>5%</p></a
                       >
                     </div>
 
@@ -569,10 +590,11 @@
                       <!-- dont care -->
                       <a href="#"
                         ><img
-                          class="img"
+                          class="img-fluid"
                           src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/unamused-face_1f612.png"
                           title="React Don't care"
-                        />Don't Care 5%</a
+                        />
+                        <p>5%</p></a
                       >
                     </div>
                     <!-- end of em -->
@@ -642,16 +664,17 @@
                 </div>
                 <!-- end of modal -->
                 <h4>How do you feel about this post?</h4>
-                <div id="react" class="container d-flex gap-3">
-                  <div class="row col-fluid-12">
+                <div id="react" class="container gap-3">
+                  <div class="row row-cols-4">
                     <!-- happy -->
                     <div class="col">
                       <a href="#"
                         ><img
-                          class="img"
+                          class="img-fluid"
                           src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/beaming-face-with-smiling-eyes_1f601.png"
                           title="React Happy"
-                        />Happy</a
+                        />
+                        <p>90%</p></a
                       >
                     </div>
 
@@ -659,10 +682,11 @@
                       <!-- angry -->
                       <a href="#"
                         ><img
-                          class="img"
+                          class="img-fluid"
                           src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/pouting-face_1f621.png"
                           title="React Angry"
-                        />Angry 90%</a
+                        />
+                        <p>0</p></a
                       >
                     </div>
 
@@ -670,10 +694,11 @@
                       <!-- sad -->
                       <a href="#"
                         ><img
-                          class="img"
+                          class="img-fluid"
                           src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/crying-face_1f622.png"
                           title="React Sad"
-                        />Sad 5%</a
+                        />
+                        <p>5%</p></a
                       >
                     </div>
 
@@ -681,10 +706,11 @@
                       <!-- dont care -->
                       <a href="#"
                         ><img
-                          class="img"
+                          class="img-fluid"
                           src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/unamused-face_1f612.png"
                           title="React Don't care"
-                        />Don't Care 5%</a
+                        />
+                        <p>5%</p></a
                       >
                     </div>
                     <!-- end of em -->
@@ -754,16 +780,17 @@
                 </div>
                 <!-- end of modal -->
                 <h4>How do you feel about this post?</h4>
-                <div id="react" class="container d-flex gap-3">
-                  <div class="row col-fluid-12">
+                <div id="react" class="container gap-3">
+                  <div class="row row-cols-4">
                     <!-- happy -->
                     <div class="col">
                       <a href="#"
                         ><img
-                          class="img"
+                          class="img-fluid"
                           src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/beaming-face-with-smiling-eyes_1f601.png"
                           title="React Happy"
-                        />Happy 90%</a
+                        />
+                        <p>90%</p></a
                       >
                     </div>
 
@@ -771,10 +798,11 @@
                       <!-- angry -->
                       <a href="#"
                         ><img
-                          class="img"
+                          class="img-fluid"
                           src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/pouting-face_1f621.png"
                           title="React Angry"
-                        />Angry</a
+                        />
+                        <p>0</p></a
                       >
                     </div>
 
@@ -782,10 +810,11 @@
                       <!-- sad -->
                       <a href="#"
                         ><img
-                          class="img"
+                          class="img-fluid"
                           src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/crying-face_1f622.png"
                           title="React Sad"
-                        />Sad 5%</a
+                        />
+                        <p>5%</p></a
                       >
                     </div>
 
@@ -793,10 +822,11 @@
                       <!-- dont care -->
                       <a href="#"
                         ><img
-                          class="img"
+                          class="img-fluid"
                           src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/unamused-face_1f612.png"
                           title="React Don't care"
-                        />Don't Care 5%</a
+                        />
+                        <p>5%</p></a
                       >
                     </div>
                     <!-- end of em -->
@@ -809,7 +839,7 @@
           <div class="col">
             <div class="card">
               <img
-                src="https://files01.pna.gov.ph/category-list/2021/12/06/shooting.jpeg"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/No_image_3x4.svg/640px-No_image_3x4.svg.png"
                 class="card-img-top"
                 alt="..."
               />
@@ -864,16 +894,17 @@
                 </div>
                 <!-- end of modal -->
                 <h4>How do you feel about this post?</h4>
-                <div id="react" class="container d-flex gap-3">
-                  <div class="row col-fluid-12">
+                <div id="react" class="container gap-3">
+                  <div class="row row-cols-4">
                     <!-- happy -->
                     <div class="col">
                       <a href="#"
                         ><img
-                          class="img"
+                          class="img-fluid"
                           src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/beaming-face-with-smiling-eyes_1f601.png"
                           title="React Happy"
-                        />Happy 90%</a
+                        />
+                        <p>90%</p></a
                       >
                     </div>
 
@@ -881,10 +912,11 @@
                       <!-- angry -->
                       <a href="#"
                         ><img
-                          class="img"
+                          class="img-fluid"
                           src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/pouting-face_1f621.png"
                           title="React Angry"
-                        />Angry</a
+                        />
+                        <p>0</p></a
                       >
                     </div>
 
@@ -892,10 +924,11 @@
                       <!-- sad -->
                       <a href="#"
                         ><img
-                          class="img"
+                          class="img-fluid"
                           src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/crying-face_1f622.png"
                           title="React Sad"
-                        />Sad 5%</a
+                        />
+                        <p>5%</p></a
                       >
                     </div>
 
@@ -903,20 +936,11 @@
                       <!-- dont care -->
                       <a href="#"
                         ><img
-                          class="img"
+                          class="img-fluid"
                           src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/unamused-face_1f612.png"
                           title="React Don't care"
-                        />Don't Care 5%</a
-                      >
-                    </div>
-                    <!-- afraid -->
-                    <div class="col">
-                      <a href="#"
-                        ><img
-                          class="img"
-                          src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/fearful-face_1f628.png"
-                          title="React Afraid"
-                        />Afraid</a
+                        />
+                        <p>5%</p></a
                       >
                     </div>
                     <!-- end of em -->

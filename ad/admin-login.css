@@ -15,7 +15,20 @@ html {
   text-align: center;
   width: 100%;
 }
-
+.img-fluid:hover {
+  background: rgb(22, 35, 140);
+  background: radial-gradient(
+    circle,
+    rgba(22, 35, 140, 1) 39%,
+    rgba(255, 243, 243, 1) 100%
+  );
+  border-radius: 50%;
+}
+.col a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
 main {
   justify-content: center;
   text-align: center;
