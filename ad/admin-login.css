@@ -66,6 +66,18 @@ main {
 }
 /* create query */
 
+/* print */
+@media print {
+  #printPageButton {
+    display: none;
+  }
+}
+#printPageButton {
+  border: none;
+}
+#printPageButton:hover {
+  border: 2px solid #023047;
+}
 /* post */
 
 .left-side {
