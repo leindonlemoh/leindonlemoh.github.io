@@ -71,6 +71,15 @@ html {
   color: black;
   font-size: 10px;
 }
+.img-fluid:hover {
+  background: rgb(22, 35, 140);
+  background: radial-gradient(
+    circle,
+    rgba(22, 35, 140, 1) 39%,
+    rgba(255, 243, 243, 1) 100%
+  );
+  border-radius: 50%;
+}
 /* form */
 
 .form {
@@ -126,7 +135,9 @@ html {
   content: "";
   height: 50px;
   width: 50%;
-  background-color: transparent;
+  border: 2px solid #001021;
+  border-radius: 10px;
+  opacity: 0.6;
   float: right;
   position: absolute;
   left: 0px;
@@ -184,22 +195,6 @@ hr {
   text-align: center;
   text-decoration: none;
   margin: 2px 2px;
-}
-
-.fa-facebook {
-  background: #3b5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55acee;
-  color: white;
-  font-size: 10px;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
 }
 
 .submit {
