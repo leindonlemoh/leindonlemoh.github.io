@@ -26,6 +26,7 @@
         <h2>Philippines Plebiscite</h2>
       </div>
     </div>
+    <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="home.html">Vote</a>
@@ -43,15 +44,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html"
-                >Home</a
-              >
+              <a class="nav-link" aria-current="page" href="home.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="profile.html">Profile</a>
+              <a class="nav-link active" href="profile.html">Profile</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -89,7 +88,6 @@
         </div>
       </div>
     </nav>
-
     <!-- query -->
     <div class="container-xxl">
       <div id="query" class="carousel carousel-dark slide" data-bs-ride="true">
@@ -349,8 +347,178 @@
         <!-- end of carousel div -->
       </div>
     </div>
-
+    <!-- END OF QUERY -->
     <div class="body">
+      <!-- start of info -->
+      <div id="info" class="container mt-5 text-center">
+        <div class="row col-fluid-12">
+          <div class="col-lg-2 bg-light rounded-pill border border-dark">
+            First Name:
+          </div>
+          <div class="col-lg-4 bg-light border border-dark rounded-pill">
+            Juan
+          </div>
+          <div class="col-lg-2 bg-light rounded-pill border border-dark">
+            Last Name:
+          </div>
+          <div class="col-lg-4 bg-light border border-dark rounded-pill">
+            Marcos
+          </div>
+        </div>
+        <div class="row col-fluid-12">
+          <div class="col-lg-2 bg-light rounded-pill border border-dark">
+            Email:
+          </div>
+          <div class="col-lg-4 bg-light border border-dark rounded-pill">
+            Juanmarcos@aol.com
+          </div>
+          <div class="col-lg-2 bg-light rounded-pill border border-dark">
+            Contact Number:
+          </div>
+          <div class="col-lg-4 bg-light border border-dark rounded-pill">
+            +639586332145
+          </div>
+        </div>
+      </div>
+
+      <!-- end of info -->
+
+      <!-- create post -->
+      <div class="container mt-4">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          data-bs-whatever="@mdo"
+        >
+          Create Post
+        </button>
+
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New Post</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label"
+                      >Post:</label
+                    >
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileSm" class="form-label"
+                      >Add Image:</label
+                    >
+                    <input
+                      class="form-control form-control-sm"
+                      id="formFileSm"
+                      type="file"
+                    />
+                  </div>
+                  <div class="mb-3 p-5">
+                    <label for="recipient-name" class="col-form-label"
+                      >Choices:</label
+                    >
+                    <br />
+                    <!-- choices -->
+                    <div id="react" class="container gap-3">
+                      <div class="row row-cols-4">
+                        <!-- happy -->
+                        <div class="col">
+                          <a href="#"
+                            ><img
+                              class="img img-fluid"
+                              src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/beaming-face-with-smiling-eyes_1f601.png"
+                              title="React Happy"
+                          /></a>
+                        </div>
+
+                        <div class="col">
+                          <!-- angry -->
+                          <a href="#"
+                            ><img
+                              class="img img-fluid"
+                              src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/pouting-face_1f621.png"
+                              title="React Angry"
+                          /></a>
+                        </div>
+
+                        <div class="col">
+                          <!-- sad -->
+                          <a href="#"
+                            ><img
+                              class="img img-fluid"
+                              src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/crying-face_1f622.png"
+                              title="React Sad"
+                          /></a>
+                        </div>
+
+                        <div class="col">
+                          <!-- dont care -->
+                          <a href="#"
+                            ><img
+                              class="img img-fluid"
+                              src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/unamused-face_1f612.png"
+                              title="React Don't care"
+                          /></a>
+                        </div>
+                        <!-- afraid -->
+                        <div class="col">
+                          <a href="#"
+                            ><img
+                              class="img img-fluid"
+                              src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/fearful-face_1f628.png"
+                              title="React Afraid"
+                          /></a>
+                        </div>
+                        <!-- blessed -->
+                        <div class="col">
+                          <a href="#"
+                            ><img
+                              class="img img-fluid"
+                              src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/smiling-face-with-halo_1f607.png"
+                              title="blessed"
+                          /></a>
+                        </div>
+
+                        <!-- end of em -->
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button type="button" class="btn btn-primary">Post</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of create post -->
+
       <!-- post -->
       <div class="container my-3">
         <div class="row row-cols-md-3 row-cols-sm-2 row-cols-1 g-3">
@@ -814,471 +982,53 @@
               </div>
             </div>
           </div>
-          <!-- post 5 -->
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/No_image_3x4.svg/640px-No_image_3x4.svg.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Sample Post</h5>
-                <!-- Button trigger modal -->
-                <a
-                  href="#"
-                  class="btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Read more
-                </a>
-
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="exampleModal"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">
-                          Modal title
-                        </h5>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div div class="modal-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Recusandae, quasi!
-                      </div>
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-secondary"
-                          data-bs-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end of modal -->
-                <h4>How do you feel about this post?</h4>
-                <div id="react" class="container gap-3">
-                  <div class="row row-cols-4">
-                    <!-- happy -->
-                    <div class="col">
-                      <a href="#"
-                        ><img
-                          class="img-fluid"
-                          src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/beaming-face-with-smiling-eyes_1f601.png"
-                          title="React Happy"
-                        />
-                        <p>90%</p></a
-                      >
-                    </div>
-
-                    <div class="col">
-                      <!-- angry -->
-                      <a href="#"
-                        ><img
-                          class="img-fluid"
-                          src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/pouting-face_1f621.png"
-                          title="React Angry"
-                        />
-                        <p>0</p></a
-                      >
-                    </div>
-
-                    <div class="col">
-                      <!-- sad -->
-                      <a href="#"
-                        ><img
-                          class="img-fluid"
-                          src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/crying-face_1f622.png"
-                          title="React Sad"
-                        />
-                        <p>5%</p></a
-                      >
-                    </div>
-
-                    <div class="col">
-                      <!-- dont care -->
-                      <a href="#"
-                        ><img
-                          class="img-fluid"
-                          src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/unamused-face_1f612.png"
-                          title="React Don't care"
-                        />
-                        <p>5%</p></a
-                      >
-                    </div>
-                    <!-- end of em -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- post 6 -->
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/No_image_3x4.svg/640px-No_image_3x4.svg.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Police officer Illegal use of uniforms and insignias
-                </h5>
-                <!-- Button trigger modal -->
-                <a
-                  href="#"
-                  class="btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Read more
-                </a>
-
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="exampleModal"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">
-                          Modal title
-                        </h5>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div div class="modal-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Recusandae, quasi!
-                      </div>
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-secondary"
-                          data-bs-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end of modal -->
-                <h4>How do you feel about this post?</h4>
-                <div id="react" class="container gap-3">
-                  <div class="row row-cols-4">
-                    <!-- happy -->
-                    <div class="col">
-                      <a href="#"
-                        ><img
-                          class="img-fluid"
-                          src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/beaming-face-with-smiling-eyes_1f601.png"
-                          title="React Happy"
-                        />
-                        <p>90%</p></a
-                      >
-                    </div>
-
-                    <div class="col">
-                      <!-- angry -->
-                      <a href="#"
-                        ><img
-                          class="img-fluid"
-                          src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/pouting-face_1f621.png"
-                          title="React Angry"
-                        />
-                        <p>0</p></a
-                      >
-                    </div>
-
-                    <div class="col">
-                      <!-- sad -->
-                      <a href="#"
-                        ><img
-                          class="img-fluid"
-                          src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/crying-face_1f622.png"
-                          title="React Sad"
-                        />
-                        <p>5%</p></a
-                      >
-                    </div>
-
-                    <div class="col">
-                      <!-- dont care -->
-                      <a href="#"
-                        ><img
-                          class="img-fluid"
-                          src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/unamused-face_1f612.png"
-                          title="React Don't care"
-                        />
-                        <p>5%</p></a
-                      >
-                    </div>
-                    <!-- end of em -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- post 7 -->
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/No_image_3x4.svg/640px-No_image_3x4.svg.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  University of iskul bukul charity donated to ...
-                </h5>
-                <!-- Button trigger modal -->
-                <a
-                  href="#"
-                  class="btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Read more
-                </a>
-
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="exampleModal"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">
-                          Modal title
-                        </h5>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div div class="modal-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Recusandae, quasi!
-                      </div>
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-secondary"
-                          data-bs-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end of modal -->
-                <h4>How do you feel about this post?</h4>
-                <div id="react" class="container gap-3">
-                  <div class="row row-cols-4">
-                    <!-- happy -->
-                    <div class="col">
-                      <a href="#"
-                        ><img
-                          class="img-fluid"
-                          src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/beaming-face-with-smiling-eyes_1f601.png"
-                          title="React Happy"
-                        />
-                        <p>90%</p></a
-                      >
-                    </div>
-
-                    <div class="col">
-                      <!-- angry -->
-                      <a href="#"
-                        ><img
-                          class="img-fluid"
-                          src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/pouting-face_1f621.png"
-                          title="React Angry"
-                        />
-                        <p>0</p></a
-                      >
-                    </div>
-
-                    <div class="col">
-                      <!-- sad -->
-                      <a href="#"
-                        ><img
-                          class="img-fluid"
-                          src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/crying-face_1f622.png"
-                          title="React Sad"
-                        />
-                        <p>5%</p></a
-                      >
-                    </div>
-
-                    <div class="col">
-                      <!-- dont care -->
-                      <a href="#"
-                        ><img
-                          class="img-fluid"
-                          src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/unamused-face_1f612.png"
-                          title="React Don't care"
-                        />
-                        <p>5%</p></a
-                      >
-                    </div>
-                    <!-- end of em -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- post 8 -->
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/No_image_3x4.svg/640px-No_image_3x4.svg.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                <!-- Button trigger modal -->
-                <a
-                  href="#"
-                  class="btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Read more
-                </a>
-
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="exampleModal"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">
-                          Modal title
-                        </h5>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div div class="modal-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Recusandae, quasi!
-                      </div>
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-secondary"
-                          data-bs-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end of modal -->
-                <h4>How do you feel about this post?</h4>
-                <div id="react" class="container gap-3">
-                  <div class="row row-cols-4">
-                    <!-- happy -->
-                    <div class="col">
-                      <a href="#"
-                        ><img
-                          class="img-fluid"
-                          src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/beaming-face-with-smiling-eyes_1f601.png"
-                          title="React Happy"
-                        />
-                        <p>90%</p></a
-                      >
-                    </div>
-
-                    <div class="col">
-                      <!-- angry -->
-                      <a href="#"
-                        ><img
-                          class="img-fluid"
-                          src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/pouting-face_1f621.png"
-                          title="React Angry"
-                        />
-                        <p>0</p></a
-                      >
-                    </div>
-
-                    <div class="col">
-                      <!-- sad -->
-                      <a href="#"
-                        ><img
-                          class="img-fluid"
-                          src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/crying-face_1f622.png"
-                          title="React Sad"
-                        />
-                        <p>5%</p></a
-                      >
-                    </div>
-
-                    <div class="col">
-                      <!-- dont care -->
-                      <a href="#"
-                        ><img
-                          class="img-fluid"
-                          src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/unamused-face_1f612.png"
-                          title="React Don't care"
-                        />
-                        <p>5%</p></a
-                      >
-                    </div>
-                    <!-- end of em -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
+      <!-- end of post -->
     </div>
     <!-- JavaScript Bundle with Popper -->
 
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

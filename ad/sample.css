@@ -1,0 +1,15 @@
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 11px;
+  text-align: center;
+}
+.img:hover {
+  background: rgb(22, 35, 140);
+  background: radial-gradient(
+    circle,
+    rgba(22, 35, 140, 1) 39%,
+    rgba(255, 243, 243, 1) 100%
+  );
+  border-radius: 50%;
+}
